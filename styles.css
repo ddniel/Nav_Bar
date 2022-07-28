@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+/* Variables */
+
+:root {
+    --primary-color: #57CBF0;
+    --secondary-color: #323232;
+    --transition: .4s;
+
+}
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 10px #BBB;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.nav-container {
+    margin: 0 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.nav-header {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo-img {
+    height: 2.7rem;
+}
+
+/* Links */
+
+.nav-links {
+    overflow: hidden;
+    height: 0;
+    transition: var(--transition);
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+/* Hamburguesa */
+.nav-toggle {
+    height: 30px;
+    width: 30px;
+    background: none;
+    border: none;
+}
+
+.nav-toggle i {
+    font-size: 30px;
+    transition: var(--transition);
+}
+
+.nav-toggle i:hover {
+    transform: rotate(90deg);
+}
+
+
+/*Menu activo*/
+
+.show-links {
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    margin: auto;
+    font-size: 18px;
+    text-align: center;
+    gap: .6rem;
+}
