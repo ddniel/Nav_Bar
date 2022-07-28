@@ -85,10 +85,11 @@ a {
 
 .nav-toggle i {
     font-size: 30px;
+    color: var(--secondary-color);
     transition: var(--transition);
 }
 
-.nav-toggle i:hover {
+.btn-clicked {
     transform: rotate(90deg);
 }
 
